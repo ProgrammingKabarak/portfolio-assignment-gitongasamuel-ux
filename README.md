@@ -5,7 +5,8 @@ A responsive, minimalist personal portfolio built to showcase my ventures, techn
 ## Author
 * **Name:** Samuel Mahianyu Gitonga
 * **Institution:** Kabarak University
-* **Course:** Markup and Scripting 
+* **Course:** Markup and Scripting
+* acess https://samwebsite13.netlify.app/
 
 ## Overview
 This portfolio highlights my focus on digital infrastructure and AI orchestration, featuring platforms like Rework, Datarion Systems, and KABI. The interface utilizes a premium, ultra-dark aesthetic and is built entirely from scratch, strictly avoiding external CSS frameworks or JavaScript libraries.
