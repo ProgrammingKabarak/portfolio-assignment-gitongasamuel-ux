@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Samuel Mahianyu Gitonga">
+    <title>Sam Gitonga | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">SG.</a>
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#resume" class="nav-item">Resume</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger menu for mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Home Page / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Placeholder for Avatar -->
+                <div class="profile-img-container">
+                    <img src="avatar-placeholder.png" alt="Samuel Mahianyu Gitonga" class="profile-img">
+                </div>
+                <h1>Samuel Mahianyu Gitonga</h1>
+                <!-- The span below will be used for the JS typing animation -->
+                <h2 class="subtitle">I am a <span id="typewriter"></span><span class="cursor">|</span></h2>
+                <p>Welcome to my digital workspace. I focus on building scalable infrastructure and directing autonomous systems.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Biography</h3>
+                        <p>I am an Information Technology student at Kabarak University with a deep focus on tech entrepreneurship, digital infrastructure ecosystems, and system design. Rather than writing manual codebases, I specialize in acting as a systems strategist—directing autonomous AI agents to handle rapid prototyping and deployment cycles.</p>
+                        
+                        <h3>Career Aspirations & Interests</h3>
+                        <p>My goal is to continue architecting high-growth platforms and studying first-principles business methodologies. Outside of executing tech ventures, I actively research Silicon Valley operational strategies and study the early execution patterns of elite technology companies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-container">
+                    <!-- Progress Bar style skills -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>System Architecture & Strategy</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>AI Tool Orchestration</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>HTML5 / Semantic Web</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>CSS3 (Grid/Flexbox)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Vanilla JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Git & Version Control</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Ventures & Projects</h2>
+                
+                <!-- Project Filtering (JS Feature) -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                    <button class="filter-btn" data-filter="ai">AI / Automation</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="infrastructure">
+                        <div class="project-content">
+                            <h3>Rework</h3>
+                            <p>An anonymous, skills-first freelance talent network. Managed the migration to a live custom domain and initiated organic growth sprints targeting over 290 waitlist users.</p>
+                            <ul class="tech-stack">
+                                <li>System Design</li>
+                                <li>Growth Strategy</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                                <a href="#" class="btn-small">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-content">
+                            <h3>Datarion Systems</h3>
+                            <p>An AI-powered surveillance and real-world data intelligence platform targeted at commercial institutions, complete with monthly subscription tier architectures.</p>
+                            <ul class="tech-stack">
+                                <li>AI Orchestration</li>
+                                <li>Infrastructure</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-content">
+                            <h3>KABI</h3>
+                            <p>A live, RAG-powered Telegram study assistant utilizing localized past exam papers, integrated with an automated fintech billing engine via webhooks.</p>
+                            <ul class="tech-stack">
+                                <li>Webhooks</li>
+                                <li>Automation</li>
+                                <li>RAG APIs</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Resume / CV Section -->
+        <section id="resume" class="section bg-alt">
+            <div class="container text-center">
+                <h2 class="section-title">Resume & Education</h2>
+                <div class="resume-content">
+                    <div class="education-block">
+                        <h3>Diploma in Information Technology</h3>
+                        <p><strong>Kabarak University</strong> | Nakuru, Kenya (First-Year)</p>
+                    </div>
+                    <div class="education-block">
+                        <h3>Achievements</h3>
+                        <p>Winner: Kabarak University Innovation Challenge (TrustPay & UNHID Platforms)</p>
+                        <p>Participant: Hackfest Open-Format Hackathon (Nakuru, July 2026)</p>
+                    </div>
+                    <a href="resume.pdf" class="btn primary-btn" download>Download Full CV (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <!-- Contact Form (Validated by JS) -->
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Email: contact@example.com</p>
+                        <div class="social-links">
+                            <a href="https://github.com/ProgrammingKabarak" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Samuel Mahianyu Gitonga. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/ProgrammingKabarak">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (JS Feature) -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">&uarr;</button>
+
+    <!-- Link to JavaScript File -->
+    <script src="script.js"></script>
+</body>
+  </html>
+                                                                                      
